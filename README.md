@@ -15,7 +15,7 @@ An intelligent agent that generates Python code for unknown or poorly-documented
 ## Architecture
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  LangGraph Agent                         │
+│                  LangGraph Agent                        │
 │  (analyze → search → crawl → index → generate)          │
 └─────────────────────────────────────────────────────────┘
                            │
@@ -439,8 +439,8 @@ If you use this project in your research, please cite:
 ```bibtex
 @software{library_codegen_agent,
   title={Library Code Generation Agent},
-  author={Your Name},
+  author={Alidu Abubakari},
   year={2024},
-  url={https://github.com/yourusername/library-codegen-agent}
+  url={https://github.com/aliduabubakari/library-codegen-agent.git}
 }
 ```
