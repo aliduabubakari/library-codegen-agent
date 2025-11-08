@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "library-codegen-agent"
+version = "0.1.0"
+description = "LLM-powered agent for generating code with unknown libraries"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=0.2.45",
+    "langchain>=0.3.7",
+    "openai>=1.54.5",
+    "tavily-python>=0.5.0",
+    "chromadb>=0.5.23",
+    "sentence-transformers>=3.3.1",
+    "sqlalchemy>=2.0.36",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.10.3",
+    "structlog>=24.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-asyncio>=0.24.0",
+    "black>=24.10.0",
+    "isort>=5.13.2",
+    "mypy>=1.13.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

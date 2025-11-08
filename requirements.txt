@@ -1,0 +1,44 @@
+# Core Dependencies
+langgraph==0.2.45
+langchain==0.3.7
+langchain-core==0.3.15
+langchain-community==0.3.5
+openai==1.54.5
+
+# Tavily
+tavily-python==0.5.0
+
+# Vector Store & Embeddings
+chromadb==0.5.23
+sentence-transformers==3.3.1
+
+# Database
+sqlalchemy==2.0.36
+sqlite-utils==3.38
+
+# Code Analysis
+tree-sitter==0.23.2
+tree-sitter-python==0.23.6
+pygments==2.18.0
+
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.10.3
+pydantic-settings==2.6.1
+tenacity==9.0.0
+aiohttp==3.11.10
+httpx==0.28.1
+
+# Logging
+structlog==24.4.0
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+
+# Development
+black==24.10.0
+isort==5.13.2
+flake8==7.1.1
+mypy==1.13.0
